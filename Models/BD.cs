@@ -19,17 +19,17 @@ public static class BD
     }
 
                 public static int Elmininar(int IdPersonaje)
-            {
+                {
         
                 string sql = "DELETE FROM Personajes WHERE IdPersonaje = @IdPersonaje";
                 using(SqlConnection db = new SqlConnection(_connectionString))
                 {
                  return db.Execute(sql, new { IdPersonaje=IdPersonaje});
                 }
-            }
+                }
 
                 public static List<Personaje> ListarPersonajes()
-                    {
+                {
 
                 using (SqlConnection db = new SqlConnection(_connectionString))
                 {
@@ -39,6 +39,21 @@ public static class BD
                 }
                 return _ListadoPersonajes;
                 }
+
+         public static Personaje VerInfoPersonaje(int IdPersonaje)
+           {
+           Personaje MiPersonaje= null;
+            using(SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql ="SELECT * FROM Jugadores where IdPersonaje = @IdPersonaje";
+                MiPersonaje = db.QueryFirstOrDefault<Personaje>(sql,new {IdPersonaje=IdPersonaje});
+
+            }
+            return MiPersonaje;
+
+
+            }
+
     }
 }
 
