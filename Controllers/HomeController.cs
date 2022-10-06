@@ -22,6 +22,12 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult VerDetallePersonaje(int IdPersonaje)
+    {
+        ViewBag.InfoPersonaje = BD.VerInfoPersonaje(IdPersonaje);
+        ViewBag.listaPersonajes = BD.ListarPersonajes(Idpersonaje);
+        return View("DetallePersonaje");
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
