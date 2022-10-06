@@ -19,7 +19,7 @@ namespace Disney4c.Models;
             _Apellido = Apellido;
             _Pelicula = Pelicula;
             _Serie = Serie;
-            _Imagen = _Imagen;
+            _Imagen = Imagen;
             _Edad = Edad;
          } 
         public Personaje()
@@ -58,5 +58,17 @@ namespace Disney4c.Models;
         {
             get { return _Serie;}
             set {_Serie = value;}
+        }
+
+        public string Imagen
+        {
+            get { return _Imagen;}
+            set {_Imagen = value;}
+        }
+
+        public int Edad
+        {
+            get { return _Edad;}
+            set {_Edad = value;}
         }
     }
