@@ -8,6 +8,7 @@ namespace Disney4c.Models{
 public static class BD
     {
         private static List<Personaje> _ListadoPersonajes= new List<Personaje>(); 
+        private static List<Personaje> ListadoPersonajesBuscados = new List<Personaje>();
          private static string _connectionString = @"Server=127.0.0.1; 
         Database=PreguntadORT;Trusted_Connection=True;";
 
@@ -17,7 +18,6 @@ public static class BD
             db.Execute(sql, new {pNombre=pers.Nombre, pApellido=pers.Apellido, pPelicula=pers.Pelicula, pSerie=pers.Serie, pImagen=pers.Imagen, pEdad=pers.Edad });
         }
     }
-
                 public static int Elmininar(int IdPersonaje)
                 {
         
@@ -28,28 +28,41 @@ public static class BD
                 }
                 }
 
-                public static List<Personaje> ListarPersonajes()
-                {
+            public static List<Personaje> ListarPersonajes()
+            {
 
-                using (SqlConnection db = new SqlConnection(_connectionString))
-                {
-                    string sql = "SELECT * FROM Personajes";
-                    _ListadoPersonajes =db.Query<Personaje>(sql).ToList();
-                
-                }
-                return _ListadoPersonajes;
-                }
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = "SELECT * FROM Personajes";
+                _ListadoPersonajes =db.Query<Personaje>(sql).ToList();
+            
+            }
+            return _ListadoPersonajes;
+            }
 
          public static Personaje VerInfoPersonaje(int IdPersonaje)
            {
            Personaje MiPersonaje= null;
             using(SqlConnection db = new SqlConnection(_connectionString))
             {
-                string sql ="SELECT * FROM Jugadores where IdPersonaje = @IdPersonaje";
+                string sql ="SELECT * FROM Personajes where IdPersonaje = @IdPersonaje";
                 MiPersonaje = db.QueryFirstOrDefault<Personaje>(sql,new {IdPersonaje=IdPersonaje});
 
             }
             return MiPersonaje;
+
+
+            }
+            public static List<Personaje> BuscarPersonaje(string param)
+           {
+           
+            using(SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql ="SELECT * FROM Personajes like '%param'";
+                ListadoPersonajesBuscados =db.Query<Personaje>(sql).ToList();
+
+            }
+            return ListadoPersonajesBuscados;
 
 
             }
