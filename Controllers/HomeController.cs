@@ -28,6 +28,11 @@ public class HomeController : Controller
         ViewBag.listaPersonajes = BD.ListarPersonajes();
         return View("DetallePersonaje");
     }
+    public IActionResult VerPersonajes()
+    {
+        ViewBag.listaPersonajes = BD.ListarPersonajes();
+        return View ("Personajes");
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
