@@ -17,6 +17,16 @@ body {
   margin-bottom: 60px;
 }
 
+<<<<<<< HEAD
 .imgLogo{
   width: 6%;
+=======
+footer
+{
+ color: aliceblue;
+}
+.pt-5
+{
+ font-size: 1cm;
+>>>>>>> 705f86887871b3a0c299a079e71bb4c7eca14d12
 }
