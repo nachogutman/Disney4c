@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\46961979\\Desktop\\Disney4c\\Disney4c.csproj": {}
   },
   "projects": {
@@ -12,12 +13,43 @@
         "projectPath": "C:\\Users\\46961979\\Desktop\\Disney4c\\Disney4c.csproj",
         "packagesPath": "C:\\Users\\46961979\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\46961979\\Desktop\\Disney4c\\obj\\",
+=======
+<<<<<<< HEAD
+    "C:\\Users\\47066838\\Desktop\\Disney4c\\Disney4c.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\47066838\\Desktop\\Disney4c\\Disney4c.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\47066838\\Desktop\\Disney4c\\Disney4c.csproj",
+        "projectName": "Disney4c",
+        "projectPath": "C:\\Users\\47066838\\Desktop\\Disney4c\\Disney4c.csproj",
+        "packagesPath": "C:\\Users\\47066838\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47066838\\Desktop\\Disney4c\\obj\\",
+=======
+    "C:\\Users\\47201189\\Downloads\\Disney4c-main\\Disney4c\\Disney4c.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\47201189\\Downloads\\Disney4c-main\\Disney4c\\Disney4c.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\47201189\\Downloads\\Disney4c-main\\Disney4c\\Disney4c.csproj",
+        "projectName": "Disney4c",
+        "projectPath": "C:\\Users\\47201189\\Downloads\\Disney4c-main\\Disney4c\\Disney4c.csproj",
+        "packagesPath": "C:\\Users\\47201189\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47201189\\Downloads\\Disney4c-main\\Disney4c\\obj\\",
+>>>>>>> 5fe3126b587334f35db1d4dd8aaefd6f897e978b
+>>>>>>> 3f6e462a8fa4de5a5f948dbcb52fe91f36bd4b16
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\46961979\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+          "C:\\Users\\47066838\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\47201189\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 5fe3126b587334f35db1d4dd8aaefd6f897e978b
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
