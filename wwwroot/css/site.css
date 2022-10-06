@@ -18,6 +18,10 @@ body {
   background-color: skyblue;
 }
 
+<<<<<<< HEAD
+.imgLogo{
+  width: 6%;
+=======
 footer
 {
  color: aliceblue;
@@ -25,8 +29,12 @@ footer
 .pt-5
 {
  font-size: 1cm;
+<<<<<<< HEAD
 }
 
 .letra{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+=======
+>>>>>>> 705f86887871b3a0c299a079e71bb4c7eca14d12
+>>>>>>> 5fe3126b587334f35db1d4dd8aaefd6f897e978b
 }
