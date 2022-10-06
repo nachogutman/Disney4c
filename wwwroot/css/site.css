@@ -15,6 +15,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: skyblue;
 }
 
 footer
@@ -24,4 +25,8 @@ footer
 .pt-5
 {
  font-size: 1cm;
+}
+
+.letra{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
