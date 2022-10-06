@@ -10,6 +10,14 @@ public static class BD
         private static List<Personaje> _ListadoPersonajes= new List<Personaje>(); 
          private static string _connectionString = @"Server=127.0.0.1; 
         Database=PreguntadORT;Trusted_Connection=True;";
+
+        public static void AgregarPersonaje(Personaje pers){
+        string sql = "INSERT INTO Personajes(Nombre,Apellido,Pelicula, Serie, Imagen, Edad) VALUES (@pNombre, @pApellido, @pPelicula, @pSerie, @pImagen, @pEdad)";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new {pNombre=pers.Nombre, pApellido=pers.Apellido, pPelicula=pers.Pelicula, pSerie=pers.Serie, pImagen=pers.Imagen, pEdad=pers.Edad });
+        }
+    }
+
                 public static int Elmininar(int IdPersonaje)
             {
         
@@ -33,3 +41,7 @@ public static class BD
                 }
     }
 }
+
+
+   
+
