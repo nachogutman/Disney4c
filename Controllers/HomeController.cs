@@ -25,7 +25,7 @@ public class HomeController : Controller
     public IActionResult VerDetallePersonaje(int IdPersonaje)
     {
         ViewBag.InfoPersonaje = BD.VerInfoPersonaje(IdPersonaje);
-        ViewBag.listaPersonajes = BD.ListarPersonajes(Idpersonaje);
+        ViewBag.listaPersonajes = BD.ListarPersonajes();
         return View("DetallePersonaje");
     }
 
